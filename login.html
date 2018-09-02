@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/design.css">
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+    <script src="js/utlis.js"></script>
+    <script src="./js/userOperaions.js"></script>
+     <script src="js/logincontroller.js"></script>
+     <script src="js/product.js"></script>
+     <script src="js/db.js"></script>
+
+</head>
+
+<body>
+
+    <h2> Login Form</h2>
+
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+    <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Register</button>
+    <button onclick="document.getElementById('id03').style.display='block'" style="width:auto;">Admin Login</button>
+
+    <div id="id01" class="modal">
+
+        <div class="modal-content animate">
+
+            
+            <div class="container">
+                <label for="uname">
+                    <b>Userid</b>
+                </label>
+                <input type="text" id="Userid"placeholder="Enter Userid" name="uname" required>
+
+                <label for="psw">
+                    <b>Password</b>
+                </label>
+                <input type="password" id="lpassword" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit" id="Login">Login</button>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <div id="id03" class="adminmodal">
+
+        <div class="modal-content animate">
+
+            
+            <div class="container">
+                <label for="uname">
+                    <b>Adminid</b>
+                </label>
+                <input type="text" id="Adminid" placeholder="Enter Admin" name="uname" required>
+
+                <label for="psw">
+                    <b>Password</b>
+                </label>
+                <input type="password" id="Adminpassword" placeholder="Enter Password" name="psw" required>
+
+                <a href="master.html"><button type="submit" id="Login">Login</button></a>
+
+            </div>
+       </div>
+     </div>  
+
+    <div id="id02" class="modalregister">
+
+        <div class="modal-content animate" >
+
+
+            <div class="container">
+                <b>Userid</b>
+                <input type="text" id="uid" placeholder="Enter userid">
+                <b>Name</b>
+                <input type="text" id="name" placeholder="Enter Name">
+
+                <b>Email</b>
+                <input type="text" id="Email" placeholder="Enter Email">
+
+                <b>Password</b>
+                <input type="password" id="password" placeholder="Enter Password">
+                <b>Confirm Password</b>
+                <input type="password" id="confirmpass" placeholder="Enter Password">
+
+               <button  id="register">Register</button>
+                  
+            </div>
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>
